@@ -1,5 +1,5 @@
 <div class="py-6">
-    @component('components.siderbar-item')
+    @component('components.siderbar-item',['url'=>route('home')])
 
         @slot('icon')
         <i class="fas fa-tachometer-alt"></i>
@@ -22,7 +22,7 @@
     @endcomponent
 
 
-    @component('components.siderbar-item')
+    @component('components.siderbar-item',['url'=>action('VillagesController@index')])
 
         @slot('icon')
         <i class="fas fa-map-marker"></i>
